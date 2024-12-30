@@ -1,20 +1,27 @@
 # Prerequisites
 
-#  Base Tools
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=softcreative2580_actioncode&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=softcreative2580_actioncode)
+
+##  Base Tools
+
 - JDK 11
 - Maven 3
 - MySQL 8 
 
-# Technologies 
+## Technologies 
+
 - Spring MVC
 - Spring Security
 - Spring Data JPA
 - Maven
 - JSP
 - MySQL
-# Database
+
+## Database
+
 Here,we used Mysql DB 
 MSQL DB Installation Steps for Linux ubuntu 14.04:
+
 - $ sudo apt-get update
 - $ sudo apt-get install mysql-server
 
