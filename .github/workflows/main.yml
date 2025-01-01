@@ -16,19 +16,12 @@ jobs:
         run: mvn checkstyle:checkstyle
 
       # setup java 11 as default (sonar-scanner req since 5.x)
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
+      - name: Setup Java 11 SDK
+        uses: actions/setup-java@v4
         with:
           distribution: "temurin"
           java-version: "11"
           check-latest: true
-
-      # - name: Set Java 11
-      #   uses: actions/checkout@v4
-      #   uses: actions/setup-java@v4
-      #   with:
-      #     distribution: "temurin"
-      #     java-version: "11"
 
       # Setup sonar-scanner
       - name: Setup SonarQube
@@ -53,7 +46,7 @@ jobs:
         uses: sonarsource/sonarqube-quality-gate-action@master
         # with:
         #   pollingTimeoutSec: 600
-        timeout-minutes: 5
+        timeout-minutes: 4
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_URL }} #OPTIONAL
