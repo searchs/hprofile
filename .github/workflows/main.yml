@@ -22,7 +22,6 @@ jobs:
           distribution: "temurin"
           java-version: "11"
           check-latest: true
-      - run: java HelloWorldApp.java
 
       # - name: Set Java 11
       #   uses: actions/checkout@v4
