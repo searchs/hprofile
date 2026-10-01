@@ -1,32 +1,32 @@
-# Current Quality Gate Status
+# hprofile — Historical Java/DevOps Training Project
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=softcreative2580_actioncode&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=softcreative2580_actioncode)
+> **Status:** Archived / historical learning project. This repository is retained for provenance and engineering reference; it is not an actively maintained production application.
 
-## Base Tools
+The Maven metadata identifies the application as **Visualpathit VProfile Webapp** (`com.visualpathit:vprofile`). This repository is therefore retained as a training/reference implementation rather than presented as an original commercial product.
 
-- JDK 11
-- Maven 3
-- MySQL 8
+## What it demonstrates
 
-## Technologies
+- Java/Spring MVC and Spring Security
+- Spring Data JPA / Hibernate
+- MySQL-backed application architecture
+- RabbitMQ, Memcached and Elasticsearch integration concepts
+- Maven/Jetty build tooling
+- Jenkins pipeline automation
+- Docker and Ansible deployment experiments
+- AWS-oriented infrastructure/deployment material
 
-- Spring MVC
-- Spring Security
-- Spring Data JPA
-- Maven
-- JSP
-- MySQL
+## Historical stack
 
-## Database
+The application targets Java 8-era tooling and includes substantially older framework/dependency versions, including Spring 4.x, Hibernate 4.x, Elasticsearch 5.x and JUnit 4. It should not be used as a current production baseline without a deliberate redesign and security/dependency review.
 
-Here,we used Mysql DB
-MSQL DB Installation Steps for Linux ubuntu 14.04:
+## Archive hygiene
 
-- $ sudo apt-get update
-- $ sudo apt-get install mysql-server
+A committed database dump was removed from the current tree during archival cleanup, and generated/local artefacts are now ignored. The repository may still contain those removed files in older Git history.
 
-Then look for the file :
+The checked-in `target/` directory is historical build output and is retained only as part of the repository record; future generated build output is ignored.
 
-- /src/main/resources/db_backup.sql
-- db_backup.sql file is a mysql dump file.we have to import this dump to mysql db server
-- > mysql -u <user_name> -p accounts < db_backup.sql
+## Archive policy
+
+No feature development is planned here. If a deployment or DevOps pattern remains useful, migrate the specific concept into an actively maintained repository rather than reviving this application wholesale.
+
+Archiving this repository does not imply that its code, dependencies or deployment configuration reflect current engineering or security standards.
