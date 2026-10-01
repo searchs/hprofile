@@ -1,2 +1,8 @@
 secrets.md
 ./secrets.md
+.env
+.env.*
+!.env.example
+target/
+*.log
+src/main/resources/db_backup.sql
